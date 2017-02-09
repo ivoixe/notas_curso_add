@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "959153750656",
+    "firebase_url": "https://notas-c2a5a.firebaseio.com",
+    "project_id": "notas-c2a5a",
+    "storage_bucket": "notas-c2a5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959153750656:android:cdf774c0997214e9",
+        "android_client_info": {
+          "package_name": "com.notas.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959153750656-treuekkshgv6p5jbe6p6pelsc6dgt380.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAYC_iDPpXUGauve9QkHwO8dl9v7578Mk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

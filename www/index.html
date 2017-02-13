@@ -17,8 +17,7 @@
 		
         <div class="notas-list-container">
             <div class="notas-list" id="notes-list">
-                <div class="note-item">Comprar pan</div>
-                <div class="note-item">Revisión de coche</div>
+              
             </div>
             <button class="anadir" id="anadir">Añadir</button>
         </div>
@@ -27,7 +26,11 @@
             <br/>
             <textarea class="comentario" name="comentario" id="comentario" placeholder="añadir comentario"></textarea>
             <br/>
+            
+                Fecha límite: <input class="fecha" type="date" name="fecha" id="fecha" requered/>
+
             <button class="salvar" id="salvar">Salvar</button>
+
 
         </div >
        
@@ -40,7 +43,7 @@
       
         <script type="text/javascript" src="cordova.js"></script>
         <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
-       
+        <script type="text/javascript" src="js/fastclick.js"></script>
       
         <script type="text/javascript" src="js/notas.js"></script>
     

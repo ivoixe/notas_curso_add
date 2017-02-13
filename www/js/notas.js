@@ -1,7 +1,7 @@
 var app = {
 
   model: {
-    "notas": [{"titulo": "Comprar pan", "contenido": "Oferta en la panaderia de la esquina"}]
+    "notas": [{"titulo": "Comprar pan", "contenido": "Oferta en la panaderia de la esquina", "fechaLimite": "17/02/2017"}]
   },
 
   firebaseConfig: {
@@ -53,9 +53,11 @@ var app = {
 
   construirNota: function() {
     var notas = app.model.notas;
-    notas.push({"titulo": app.extraerTitulo() , "contenido": app.extraerComentario() });
+    notas.push({"titulo": app.extraerTitulo() , "fechaLimite": app.extraerFecha(), "contenido": app.extraerComentario()});
   },
-
+   extraerFecha: function() {
+    return document.getElementById('fecha').value;
+  },
   extraerTitulo: function() {
     return document.getElementById('titulo').value;
   },
@@ -76,15 +78,21 @@ var app = {
   anadirNotasALista: function() {
     var notas = this.model.notas;
     var notasDivs = '';
-    for (var i in notas) {
+
+    for (var i in notas) { 
+
       var titulo = notas[i].titulo;
-      notasDivs = notasDivs + this.anadirNota(i, titulo);
+      var comentario = notas[i].contenido;
+      var fechaLimite = notas[i].fechaLimite;
+      notasDivs = notasDivs + this.anadirNota(i, titulo,comentario,fechaLimite);
     }
     return notasDivs;
   },
 
-  anadirNota: function(id, titulo) {
-    return "<div class='note-item' id='notas[" + id + "]'>" + titulo + "</div>";
+  anadirNota: function(id, titulo,contenido,fechaLimite) {
+   notas = '<div class="note-item" id="notas[' + id + ']">';
+    notas += '<div>titulo:'+ titulo +'<br>Fecha límite: ' + fechaLimite + '<br>Descripción: '+ contenido + '</div>';
+    return notas;
   },
 
 

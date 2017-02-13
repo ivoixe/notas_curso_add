@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.5" id="com.phonegap.notas" version="1.5.1"> 
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1" id="com.phonegap.notas" version="1.5.1"> 
   <name>NOTAS</name>
   <description>Hello World sample application that responds to the deviceready event.</description>
   <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
@@ -22,12 +22,14 @@
   <access origin="*"/>
   <plugin name="cordova-plugin-whitelist" version="1"/>
   <plugin name="cordova-plugin-device-motion" version="1"/>
+   <plugin name="cordova-plugin-file" source="npm" spec="~4.1.1" />
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>
   <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*"/>
   <allow-intent href="geo:*"/>
+
   <platform name="android">
     <allow-intent href="market:*"/>
   </platform>

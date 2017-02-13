@@ -160,7 +160,8 @@ var app = {
 
 if ('addEventListener' in document) {
   document.addEventListener("deviceready", function() {
-    app.say();
+  
+    console.log('ss');
     app.leerDatos();
   }, false);
 };

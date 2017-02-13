@@ -56,7 +56,13 @@ var app = {
     notas.push({"titulo": app.extraerTitulo() , "fechaLimite": app.extraerFecha(), "contenido": app.extraerComentario()});
   },
    extraerFecha: function() {
-    return document.getElementById('fecha').value;
+      var valor = document.getElementById('fecha').value;
+    if(valor === null || valor === ''){
+      return '';
+    }else{
+      var fech = new Date(valor);
+      return fech.getDate() + "/" + (fech.getMonth()+1) + "/" + fech.getFullYear();
+    }
   },
   extraerTitulo: function() {
     return document.getElementById('titulo').value;

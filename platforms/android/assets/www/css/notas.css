@@ -1,0 +1,38 @@
+body{
+	margin:0;
+	padding: 20px 0;
+	font-size: 18px;
+	font-weight:300;
+	font-family: 'Helvetica Neve';
+	background: blue;
+}
+
+.footer{
+	padding: 5px;
+	font-style: italic;
+	font-size: small;
+	text-align: center;
+}
+.notes-list-container{
+	padding: 10px;
+}
+.notes-list{
+	margin-bottom: 10px;
+}
+.note-item{
+	margin-top: 2px;
+	background-color: yellow;
+	borde:1px solid #eeeeee;
+}
+.note-editor{
+	padding: 10px;
+}
+.titulo{
+	width: 100%;
+}
+.comentario{
+	width: 100%;
+}
+#texto{
+	color:#000;
+}
